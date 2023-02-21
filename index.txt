@@ -1,1 +1,10 @@
-Writing something.....hlihgjknfdkjgfdjkgnfdbgj fdbgjfdbgkjb
+M.Subash
+Topic: JavaScript Array some().
+  Array.prototype.some()
+Description:
+       * It will check all the elements in a array 
+    to pass the test case or condition.
+       *  It returns true (and stops) if the function returns true 
+    for any one of the array elements.   
+       *  It will not make any changes in the array.
+Example:     
