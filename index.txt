@@ -6,7 +6,13 @@ Description:
     to pass the test case or condition.
        *  It returns true (and stops) if the function returns true 
     for any one of the array elements.   
+       *  call back is used to reset for 
+   each element in a array with three parameters. 
+       *  All the parameters are optional.   
        *  It will not make any changes in the array.
+syntax: 
+     arr.some(callback(element[, index[, array]])[, thisArg])
+
 Example:   
 
 M.Vijayesh
