@@ -1,1 +1,99 @@
-Writing something.....
+Name: ABINESH R R
+
+1) array.prototype.splice()
+
+		The splice() method changes the contents of an array by removing or replacing existing elements or adding new elements in place of the existing one.
+		
+		Syntax:
+			splice(start)
+			splice(start, deleteCount)
+			splice(start, deleteCount, item1)
+			splice(start, deleteCount, item1, item2, itemN)
+		
+		For example:
+			
+			const myFish = ["angel", "clown", "mandarin", "sturgeon"];
+
+			const removed = myFish.splice(2, 0, "drum");
+
+			console.log(removed)
+			
+			This logs out: ["angel", "clown", "drum", "mandarin", "sturgeon"]
+
+2) array.prototype.sort()
+
+		The sort() method sorts the elements of an array and returns the same array, now sorted. Array elements are sorted by converting them to strings and comparing strings in UTF-16 code units order. For example, "banana" comes before "cherry". In a numeric sort, 9 comes before 80, but because numbers are converted to strings, "80" comes before "9" in the Unicode order.
+
+		Syntax:
+
+			arrayName.sort()
+			arrayName.sort(function) [We can also pass function for the sorting order.]
+
+		For example:
+
+			const months = ['March', 'Jan', 'Feb', 'Dec'];
+			months.sort();
+			console.log(months);
+			// This logs out: ["Dec", "Feb", "Jan", "March"]
+
+			
+			const array1 = [1, 30, 4, 21, 100000];
+			array1.sort();
+			console.log(array1);
+			// This logs out: [1, 100000, 21, 30, 4]
+
+3) array.prototype.some()
+
+		
+		The some() method tests whether at least one element in the array passes the test implemented by the provided function. It returns true if, in the array, it finds an element for which the provided function returns true; otherwise it returns false. It doesn't modify the array.
+
+
+		Syntax:
+
+			array.some() [returns either true or false]
+			array.some() [We can also pass function]
+
+		For example:
+
+			function isBiggerThan10(element, index, array) {
+  					return element > 10;
+			}
+
+			[2, 5, 8, 1, 4].some(isBiggerThan10); // false
+			[12, 5, 8, 1, 4].some(isBiggerThan10); // true
+
+4) array.prototype.slice()
+
+		The slice() method returns a copy of a portion of an array into a new array object selected from start to end (end not included) where start and end represent the index of items in that array. The original array will not be modified.
+
+		Syntax:
+
+			slice()
+			slice(start)
+			slice(start, end)
+
+		For example:
+
+			const animals = ['ant', 'bison', 'camel', 'duck', 'elephant'];
+
+			console.log(animals.slice(2));
+			// This logs out: ["camel", "duck", "elephant"]
+
+			console.log(animals.slice(2, 4));
+			// This logs out: ["camel", "duck"]
+
+			console.log(animals.slice(1, 5));
+			// This logs out: ["bison", "camel", "duck", "elephant"]
+
+			console.log(animals.slice(-2));
+			// This logs out: ["duck", "elephant"]
+
+			console.log(animals.slice(2, -1));
+			// This logs out: ["camel", "duck"]
+
+			console.log(animals.slice());
+			// This logs out: ["ant", "bison", "camel", "duck", "elephant"]
+
+
+
+		
